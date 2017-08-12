@@ -23,9 +23,11 @@ soup = BeautifulSoup(html, "html.parser")
 
 # Retrieve all of the anchor tags
 tags = soup('span')
+#look at the "span" tag,got the number
 sum = 0
 for tag in tags:
 	sum = sum + int(tag.contents[0])
+	#print the content of that tag
     #Look at the parts of a tag
     #print('URL:', tag.get('span', None))
 print(sum)
